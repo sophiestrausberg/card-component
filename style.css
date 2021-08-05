@@ -59,7 +59,7 @@ body {
 .box {
     width: 50%;
     background-size: cover;
-    background-image: url('/images/image-header-desktop.jpg');
+    background-image: url('images/image-header-desktop.jpg');
   }
   
   .background-tint {
