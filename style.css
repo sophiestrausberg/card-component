@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root {
+    --background: hsl(233, 47%, 7%);
+    --white: hsl(0, 0%, 100%);
+    --stat-headings: hsla(0, 0%, 100%, 0.6);
+    --main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --purple: hsl(277, 64%, 61%);
+    --card-blue: hsl(244, 38%, 16%);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    color: var(--stat-headings);
+    font-size: 1em;
+}
+
+p {
+    color: var(--main-paragraph);
+    line-height: 2em;
+    padding-bottom: 3em;
+}
+
+body { 
+    background-color: var(--background);
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+    font-size: 15px;
+    margin: 10em;
+}
+
+.card{
+    display: flex;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number {
+    display: inline-block;
+    margin: 0;
+}
+
+.text {
+    box-sizing: border-box;
+    background-color: var(--card-blue);
+    width: 50%;
+    padding: 3em 6em;
+}
+
+.box {
+    width: 50%;
+    background-size: cover;
+    background-image: url('/Users/sophie/Desktop/code/web/stats-preview-card-component-main/images/image-header-desktop.jpg');
+  }
+  
+  .background-tint {
+    background-color: var(--purple);
+    background-blend-mode: multiply;
+  }
+
+.purple {
+    color: var(--purple)
+}
+
+.attribution {
+    margin: 10em;
+}
+
+@media screen and (max-width: 1000px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .box {
+        height: 300px;
+        order: 1;
+        width: 100%;
+    }
+
+    .text {
+        height: 70%;
+        order: 2;
+        text-align: center;
+        padding: 3em;
+        width: 100%;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+}
